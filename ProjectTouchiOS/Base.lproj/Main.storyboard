@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dsC-kh-LNm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -60,6 +60,9 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <segue destination="NtC-7a-10J" kind="show" identifier="nextSegue" id="qYh-Dw-zdA"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <variation key="default">
@@ -67,7 +70,8 @@
                                         <exclude reference="wwI-CW-Mt1"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=regular">
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="-7" y="116" width="1144" height="284"/>
                                     <mask key="constraints">
                                         <include reference="wwI-CW-Mt1"/>
                                     </mask>
@@ -81,6 +85,9 @@
                                 <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="wnU-PY-0Vi"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -138,6 +145,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Z1I-D4-LdJ"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="compCollection" destination="n0M-RI-Sxw" id="2jZ-Gz-xPX"/>
@@ -146,7 +154,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-344.25" y="304"/>
+            <point key="canvasLocation" x="-128.25" y="526"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="epA-LL-Noj">
+            <objects>
+                <viewController id="NtC-7a-10J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="irf-ac-o84"/>
+                        <viewControllerLayoutGuide type="bottom" id="MYt-qx-iXD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2M2-4R-Vvs">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sD-KR-acv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.75" y="526"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fEo-1b-mXr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dsC-kh-LNm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PCA-eu-dgd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3tD-8b-CTz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHd-9B-jkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794.25" y="526"/>
         </scene>
     </scenes>
 </document>
