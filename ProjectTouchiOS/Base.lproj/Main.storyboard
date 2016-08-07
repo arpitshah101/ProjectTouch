@@ -51,16 +51,50 @@
                                     <inset key="sectionInset" minX="50" minY="10" maxX="50" maxY="40"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sampleCell" id="fyR-CT-gSE">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sampleCell" id="fyR-CT-gSE" customClass="HomeImageCell" customModule="ProjectTouchiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="266" height="248"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="47B-tR-Mda">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstItem="47B-tR-Mda" firstAttribute="leading" secondItem="fyR-CT-gSE" secondAttribute="leading" id="Bjg-v2-aBR"/>
+                                            <constraint firstAttribute="bottom" secondItem="47B-tR-Mda" secondAttribute="bottom" id="f10-cQ-HcX"/>
+                                            <constraint firstAttribute="trailing" secondItem="47B-tR-Mda" secondAttribute="trailing" id="tif-49-aNA"/>
+                                            <constraint firstItem="47B-tR-Mda" firstAttribute="top" secondItem="fyR-CT-gSE" secondAttribute="top" id="w6L-qL-aF0"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="47B-tR-Mda"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <exclude reference="Bjg-v2-aBR"/>
+                                                <exclude reference="f10-cQ-HcX"/>
+                                                <exclude reference="tif-49-aNA"/>
+                                                <exclude reference="w6L-qL-aF0"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="subviews">
+                                                <include reference="47B-tR-Mda"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="Bjg-v2-aBR"/>
+                                                <include reference="f10-cQ-HcX"/>
+                                                <include reference="tif-49-aNA"/>
+                                                <include reference="w6L-qL-aF0"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
+                                            <outlet property="imageView" destination="47B-tR-Mda" id="xuM-Mj-BJX"/>
                                             <segue destination="NtC-7a-10J" kind="show" identifier="nextSegue" id="qYh-Dw-zdA"/>
                                         </connections>
                                     </collectionViewCell>
@@ -253,6 +287,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PMl-Yi-h5R"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Ic-ar-fxK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cW-Jg-bBV">

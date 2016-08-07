@@ -125,9 +125,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     //3
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) 
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HomeImageCell
         cell.backgroundColor = UIColor.redColor()
-
+        
+     //   cell.imageView.image = UIImage(named: "food.png")
+        
+        
+        switch indexPath.row {
+        case 0:
+            cell.backgroundView = UIImageView(image: UIImage(named: "food.png"))
+            break
+        case 1:
+            cell.backgroundView = UIImageView(image: UIImage(named: "toy.png"))
+            break
+        case 2:
+            cell.backgroundColor = UIColor.whiteColor()
+            cell.backgroundView = UIImageView(image: UIImage(named: "walk.png"))
+            break
+        default:
+            break
+            
+        }
+        
         // Configure the cell
         return cell
     }
@@ -145,6 +164,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
         let cell = compCollection.cellForItemAtIndexPath(indexPath)
+        
         
         cell?.frame = CGRectMake(((cell?.frame.origin.x )!) , ((cell?.frame.origin.y)!), 200,200)
     }
@@ -165,5 +185,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //        return cellSize
 //    }
 
+}
+
+class HomeImageCell:UICollectionViewCell{
+    
+    @IBOutlet weak var imageView: UIImageView!
 }
 

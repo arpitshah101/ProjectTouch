@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9606C7BB1D578A2200E7FC8F /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7BA1D578A2200E7FC8F /* food.png */; };
+		9606C7BF1D57919B00E7FC8F /* toy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7BE1D57919B00E7FC8F /* toy.png */; };
+		9606C7C11D5791FE00E7FC8F /* walk.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7C01D5791FE00E7FC8F /* walk.png */; };
 		964E12551D57775600A76B4F /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964E12541D57775600A76B4F /* Selection.swift */; };
 		96A22D081D56884300CB8414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A22D071D56884300CB8414 /* AppDelegate.swift */; };
 		96A22D0A1D56884300CB8414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A22D091D56884300CB8414 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9606C7BA1D578A2200E7FC8F /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		9606C7BE1D57919B00E7FC8F /* toy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy.png; sourceTree = "<group>"; };
+		9606C7C01D5791FE00E7FC8F /* walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk.png; sourceTree = "<group>"; };
 		964E12541D57775600A76B4F /* Selection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
 		96A22D041D56884300CB8414 /* ProjectTouchiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTouchiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A22D071D56884300CB8414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9606C7BC1D57914600E7FC8F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9606C7BD1D57915200E7FC8F /* Photos */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		9606C7BD1D57915200E7FC8F /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				9606C7BE1D57919B00E7FC8F /* toy.png */,
+				9606C7C01D5791FE00E7FC8F /* walk.png */,
+				9606C7BA1D578A2200E7FC8F /* food.png */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
 		96A22CFB1D56884300CB8414 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +125,7 @@
 		96A22D061D56884300CB8414 /* ProjectTouchiOS */ = {
 			isa = PBXGroup;
 			children = (
+				9606C7BC1D57914600E7FC8F /* Assets */,
 				96A22D071D56884300CB8414 /* AppDelegate.swift */,
 				96A22D091D56884300CB8414 /* ViewController.swift */,
 				96A22D0B1D56884300CB8414 /* Main.storyboard */,
@@ -237,7 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A22D151D56884300CB8414 /* LaunchScreen.storyboard in Resources */,
+				9606C7BB1D578A2200E7FC8F /* food.png in Resources */,
 				96A22D121D56884300CB8414 /* Assets.xcassets in Resources */,
+				9606C7C11D5791FE00E7FC8F /* walk.png in Resources */,
+				9606C7BF1D57919B00E7FC8F /* toy.png in Resources */,
 				96A22D0D1D56884300CB8414 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
