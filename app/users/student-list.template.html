@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.material.min.css" type="text/css">
+        <link rel="stylesheet" href="../../styles/main.css" type="text/css">
+    </head>
+    <body>
+    <table id="example" class="mdl-data-table" cellspacing="0" width="100%">
+        <h1>Speaking Sensibly</h1>
+        <a href="">+ Add Student</a>
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Birthday</th>
+                <th>Diagnosis</th>
+                <th>Start date</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Birthday</th>
+                <th>Diagnosis</th>
+                <th>Start date</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>965616669</td>
+                <td>Autism+</td>
+                <td>1423018269</td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Schmoe</td>
+                <td>895459869</td>
+                <td>Seizure Disorder</td>
+                <td>1431139869</td>
+            </tr>
+            <tr>
+                <td>Ben</td>
+                <td>Warner</td>
+                <td>929760669</td>
+                <td>Autism+</td>
+                <td>1413341469</td>
+            </tr>
+            <tr>
+                <td>Nicole</td>
+                <td>Johnson</td>
+                <td>968640669</td>
+                <td>ADD+</td>
+                <td>1384224669</td>
+            </tr>
+            <tr>
+                <td>Brittany</td>
+                <td>Pak</td>
+                <td>1014951069</td>
+                <td>Autism</td>
+                <td>1459651869</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.material.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable( {
+                columnDefs: [
+                {
+                    targets: [ 0, 1, 2 ],
+                    className: 'mdl-data-table__cell--non-numeric'
+                }
+            ]
+        } );
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+[
+    {
+        "_id": "0",
+        "name": {
+            "first": "John",
+            "last": "Smith"
+        },
+        "birthday": 965616669,
+        "diagnosis": ["Autism", "ADD", "ADHD"],
+        "startDate": 1423018269 
+    },
+    {
+        "_id": "1",
+        "name": {
+            "first": "Joe",
+            "last": "Schmoe"
+        },
+        "birthday": 895459869,
+        "diagnosis": ["Seizure Disorder"], 
+        "startDate": 1431139869 
+    },
+    {
+        "_id": "2",
+        "name": {
+            "first": "Ben",
+            "last": "Warner"
+        },
+        "birthday": 929760669,
+        "diagnosis": ["Autism, OCD"], 
+        "startDate": 1413341469 
+    },
+    {
+        "_id": "3",
+        "name": {
+            "first": "Nicole",
+            "last": "Johnson"
+        },
+        "birthday": 968640669,
+        "diagnosis": ["ADD, PWS"],
+        "startDate": 1384224669 
+    },
+    {
+        "_id": "4",
+        "name": {
+            "first": "Brittany",
+            "last": "Pak"
+        },
+        "birthday": 1014951069,
+        "diagnosis": ["Autism"],
+        "startDate": 1459651869 
+    }
+]
