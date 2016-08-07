@@ -20,7 +20,7 @@ import { Patient, PatientService } from './patients.service';
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let p of performances.reverse(); let i = index" [ngClass]="{'success': p.pass, 'warning': !p.pass}">
+      <tr *ngFor="let p of performances.reverse(); let i = index" [ngClass]="{'success': p.pass, 'error': !p.pass}">
         <td>{{ p.date | date }}</td>
         <td>{{ p.texture }}</td>
         <td>{{ p.intensity }}</td>
