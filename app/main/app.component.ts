@@ -2,6 +2,7 @@ import { Component, Input }  from '@angular/core';
 import { ROUTER_DIRECTIVES, Router}  from '@angular/router';
 
 import { HomeComponent } from '../home';
+import { PatientListComponent, PatientDataComponent } from '../patients';
 
 // import { User } from '../models'
 
@@ -11,10 +12,12 @@ import { HomeComponent } from '../home';
   providers:  [
   ],
   directives: [ROUTER_DIRECTIVES],
-  precompile: [HomeComponent]
+  precompile: [HomeComponent, PatientListComponent, PatientDataComponent]
 })
 
 export class AppComponent {
-  constructor(private router: Router) {}
 
+  constructor(private router: Router) {
+
+  }
 }

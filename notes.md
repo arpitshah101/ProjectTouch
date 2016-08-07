@@ -16,3 +16,21 @@ Story:
 
     Item tab:
       switches for each material to turn "on/off" for an individual student
+
+Student:
+  name
+  start date
+
+  Desensitizing Tab:
+    texture
+    frequency
+    Per day view:
+      texture name
+      avg percentage
+
+    Per game view:
+      texture name
+      frequency
+      pass/fail
+  Items tab:
+    Each item + switch to turn item on/off

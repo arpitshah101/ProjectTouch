@@ -8,6 +8,7 @@
     'app':                        'app', // 'dist',
     'home':                       'app/home',
     'main':                       'app/main',
+    'patients':                       'app/patients',
 
     '@angular':                   'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
@@ -20,7 +21,9 @@
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
 
     'home':                       { main: 'index.js', defaultExtension: 'js' },
-    'main':                       { main: 'index.js', defaultExtension: 'js' }
+    'main':                       { main: 'index.js', defaultExtension: 'js' },
+    'patients':                       { main: 'index.js', defaultExtension: 'js' },
+
   };
   var ngPackageNames = [
     'common',

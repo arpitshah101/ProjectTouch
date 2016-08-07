@@ -1,0 +1,77 @@
+body {
+  background-color: #E0E0E0;
+}
+
+nav.main-nav {
+  background-color: #2B3A67;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding-left: 100px;
+}
+
+nav.main-nav ul {
+  list-style: none;
+}
+
+nav.main-nav ul, nav.main-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav.main-nav li {
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+nav.main-nav li.active {
+  border-bottom: 4px solid white;
+}
+
+nav.main-nav, nav.main-nav ul, nav.main-nav li, nav.main-nav a {
+  height: 60px;
+  line-height: 60px;
+}
+
+nav.main-nav li a {
+  text-align: center;
+  margin: 0 40px;
+  color: white;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 2px;
+  font-size: 0.9em;
+  background-color: #fff;
+  color: #646464;
+
+  cursor: default;
+}
+
+.button.raised {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.button.raised:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0s;
+}
+
+.button.blue {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.button.dull-blue {
+  background-color: #6E7E85;
+  color: #fff;
+}

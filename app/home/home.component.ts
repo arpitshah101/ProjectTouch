@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   directives: []
 })
 export class HomeComponent {
+
 }
