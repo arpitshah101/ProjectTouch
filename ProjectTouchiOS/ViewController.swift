@@ -11,9 +11,10 @@ import UIKit
 
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    var sampleData : [String] = ["1", "2", "3", "4"]
+    var sampleData : [String] = ["1", "2", "3"]
     private let reuseIdentifier = "sampleCell"
     
+    @IBOutlet weak var slideBar: UISlider!
     
     @IBOutlet weak var compCollection: UICollectionView!
 
