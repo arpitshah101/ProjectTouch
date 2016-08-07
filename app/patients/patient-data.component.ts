@@ -20,7 +20,7 @@ import { Patient, PatientService } from './patients.service';
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let p of performances; let i = index">
+      <tr *ngFor="let p of performances.reverse(); let i = index" [ngClass]="{'success': p.pass, 'warning': !p.pass}">
         <td>{{ p.date | date }}</td>
         <td>{{ p.texture }}</td>
         <td>{{ p.intensity }}</td>
@@ -31,7 +31,23 @@ import { Patient, PatientService } from './patients.service';
     </tbody>
   </table>
   `,
-  styles: [],
+  styles: [
+    `
+      :host {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: white;
+      }
+      table {
+        margin: 0 auto;
+        padding: 20px;
+      }
+    `
+  ],
   providers: []
 })
 export class PatientDataComponent {
