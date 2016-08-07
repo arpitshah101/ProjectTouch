@@ -144,7 +144,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             break
         default:
             break
-            
         }
         
         // Configure the cell

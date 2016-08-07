@@ -278,10 +278,10 @@
             </objects>
             <point key="canvasLocation" x="875.25" y="478"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Image-->
         <scene sceneID="phc-BM-LBK">
             <objects>
-                <viewController id="ZcH-Hh-o2b" sceneMemberID="viewController">
+                <viewController id="ZcH-Hh-o2b" customClass="DisplayImage" customModule="ProjectTouchiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x36-Bs-Pll"/>
                         <viewControllerLayoutGuide type="bottom" id="PMl-Yi-h5R"/>
@@ -334,10 +334,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageVeiw" destination="2cW-Jg-bBV" id="G9G-1r-i9V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bp8-O1-xES" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666.5" y="478"/>
+            <point key="canvasLocation" x="1549.5" y="494"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fEo-1b-mXr">

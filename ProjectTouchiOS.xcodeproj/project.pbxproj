@@ -10,7 +10,14 @@
 		9606C7BB1D578A2200E7FC8F /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7BA1D578A2200E7FC8F /* food.png */; };
 		9606C7BF1D57919B00E7FC8F /* toy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7BE1D57919B00E7FC8F /* toy.png */; };
 		9606C7C11D5791FE00E7FC8F /* walk.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7C01D5791FE00E7FC8F /* walk.png */; };
+		9606C7C81D57942700E7FC8F /* beads.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7C21D57942700E7FC8F /* beads.png */; };
+		9606C7C91D57942700E7FC8F /* beanbags.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7C31D57942700E7FC8F /* beanbags.png */; };
+		9606C7CA1D57942700E7FC8F /* books.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7C41D57942700E7FC8F /* books.png */; };
+		9606C7CB1D57942700E7FC8F /* gator.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7C51D57942700E7FC8F /* gator.png */; };
+		9606C7CC1D57942700E7FC8F /* playdoh.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7C61D57942700E7FC8F /* playdoh.png */; };
+		9606C7CD1D57942700E7FC8F /* sand.png in Resources */ = {isa = PBXBuildFile; fileRef = 9606C7C71D57942700E7FC8F /* sand.png */; };
 		964E12551D57775600A76B4F /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964E12541D57775600A76B4F /* Selection.swift */; };
+		96665B5C1D57953C00A82073 /* DisplayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96665B5B1D57953C00A82073 /* DisplayImage.swift */; };
 		96A22D081D56884300CB8414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A22D071D56884300CB8414 /* AppDelegate.swift */; };
 		96A22D0A1D56884300CB8414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A22D091D56884300CB8414 /* ViewController.swift */; };
 		96A22D0D1D56884300CB8414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A22D0B1D56884300CB8414 /* Main.storyboard */; };
@@ -42,7 +49,14 @@
 		9606C7BA1D578A2200E7FC8F /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		9606C7BE1D57919B00E7FC8F /* toy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy.png; sourceTree = "<group>"; };
 		9606C7C01D5791FE00E7FC8F /* walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk.png; sourceTree = "<group>"; };
+		9606C7C21D57942700E7FC8F /* beads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beads.png; sourceTree = "<group>"; };
+		9606C7C31D57942700E7FC8F /* beanbags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beanbags.png; sourceTree = "<group>"; };
+		9606C7C41D57942700E7FC8F /* books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = books.png; sourceTree = "<group>"; };
+		9606C7C51D57942700E7FC8F /* gator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gator.png; sourceTree = "<group>"; };
+		9606C7C61D57942700E7FC8F /* playdoh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playdoh.png; sourceTree = "<group>"; };
+		9606C7C71D57942700E7FC8F /* sand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand.png; sourceTree = "<group>"; };
 		964E12541D57775600A76B4F /* Selection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		96665B5B1D57953C00A82073 /* DisplayImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayImage.swift; sourceTree = "<group>"; };
 		96A22D041D56884300CB8414 /* ProjectTouchiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTouchiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A22D071D56884300CB8414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A22D091D56884300CB8414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +112,12 @@
 				9606C7BE1D57919B00E7FC8F /* toy.png */,
 				9606C7C01D5791FE00E7FC8F /* walk.png */,
 				9606C7BA1D578A2200E7FC8F /* food.png */,
+				9606C7C21D57942700E7FC8F /* beads.png */,
+				9606C7C31D57942700E7FC8F /* beanbags.png */,
+				9606C7C41D57942700E7FC8F /* books.png */,
+				9606C7C51D57942700E7FC8F /* gator.png */,
+				9606C7C61D57942700E7FC8F /* playdoh.png */,
+				9606C7C71D57942700E7FC8F /* sand.png */,
 			);
 			name = Photos;
 			sourceTree = "<group>";
@@ -127,9 +147,10 @@
 			children = (
 				9606C7BC1D57914600E7FC8F /* Assets */,
 				96A22D071D56884300CB8414 /* AppDelegate.swift */,
+				96665B5B1D57953C00A82073 /* DisplayImage.swift */,
 				96A22D091D56884300CB8414 /* ViewController.swift */,
-				96A22D0B1D56884300CB8414 /* Main.storyboard */,
 				964E12541D57775600A76B4F /* Selection.swift */,
+				96A22D0B1D56884300CB8414 /* Main.storyboard */,
 				96A22D131D56884300CB8414 /* LaunchScreen.storyboard */,
 				96A22D111D56884300CB8414 /* Assets.xcassets */,
 				96A22D161D56884300CB8414 /* Info.plist */,
@@ -262,8 +283,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A22D151D56884300CB8414 /* LaunchScreen.storyboard in Resources */,
+				9606C7C81D57942700E7FC8F /* beads.png in Resources */,
+				9606C7CA1D57942700E7FC8F /* books.png in Resources */,
+				9606C7C91D57942700E7FC8F /* beanbags.png in Resources */,
 				9606C7BB1D578A2200E7FC8F /* food.png in Resources */,
+				9606C7CD1D57942700E7FC8F /* sand.png in Resources */,
+				9606C7CB1D57942700E7FC8F /* gator.png in Resources */,
 				96A22D121D56884300CB8414 /* Assets.xcassets in Resources */,
+				9606C7CC1D57942700E7FC8F /* playdoh.png in Resources */,
 				9606C7C11D5791FE00E7FC8F /* walk.png in Resources */,
 				9606C7BF1D57919B00E7FC8F /* toy.png in Resources */,
 				96A22D0D1D56884300CB8414 /* Main.storyboard in Resources */,
@@ -292,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				964E12551D57775600A76B4F /* Selection.swift in Sources */,
+				96665B5C1D57953C00A82073 /* DisplayImage.swift in Sources */,
 				96A22D0A1D56884300CB8414 /* ViewController.swift in Sources */,
 				96A22D101D56884300CB8414 /* ProjectTouchiOS.xcdatamodeld in Sources */,
 				96A22D081D56884300CB8414 /* AppDelegate.swift in Sources */,
